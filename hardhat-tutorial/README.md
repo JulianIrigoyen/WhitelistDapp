@@ -14,6 +14,8 @@ npx hardhat run scripts/deploy.js
 
 Steps: 
 
+HARDHAT Setup
+
 1. Create dApp directory
 2. cd /dApp-dir, create hardhat app directory
 3. run npm init --yes
@@ -25,3 +27,12 @@ Steps:
 9. Update hardhat config
 10. Compile: run npx hardhat compile
 11. Deploy: npx hardhat run scripts/deploy.js --network goerli
+
+FRONTEND Setup
+1. cd to dApp directory
+2. run npx create-next-app@latest
+3. cd to created-app dir and run ::: npm run dev
+4. Install Web3Modal library -> supports injected providers like (Metamask, Dapper, Gnosis Safe, Frame, Web3 Browsers, etc) and WalletConnect ::: npm install web3modal
+5. Install ethers.js ::: npm install ethers
+6. OPT => play around with images / styles
+7. Update index.js file under pages folder to define dApp's basic behavior
